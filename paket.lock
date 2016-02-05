@@ -1,0 +1,11 @@
+NUGET
+  remote: https://www.nuget.org/api/v2
+  specs:
+    FSharp.Charting (0.87.0)
+    FSharp.Control.AsyncSeq (2.0.3)
+    Rx-Core (2.2.5)
+      Rx-Interfaces (>= 2.2.5)
+    Rx-Interfaces (2.2.5)
+    Rx-Linq (2.2.5)
+      Rx-Core (>= 2.2.5)
+      Rx-Interfaces (>= 2.2.5)
