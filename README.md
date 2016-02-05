@@ -12,4 +12,4 @@ Draw live chart based on data extracted from log file.
     fsi.exe .\LiveLogChart.fsx <pattern> <logFile>
     fsi.exe .\LiveLogChart.fsx "Elapsed processing time: (?<value>\d+)" c:\logs\application.log
 
-![livechart](./LiveChart.jpg)
+![livechart](./LiveChart.gif)
