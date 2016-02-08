@@ -82,6 +82,7 @@ let pattern, log =
 
 printfn "Watched log file: %s\nPattern: %s" log pattern
 
+// for testing use: fsi.AddPrinter(fun (ch:GenericChart) -> ch.ShowChart(); "(Chart)")
 let form = new Form(Visible = true, TopMost = true, Width = 700, Height = 500)
 form.Text <- log
 form.Controls.Add(new ChartControl(drawChart pattern log, Dock = DockStyle.Fill))
