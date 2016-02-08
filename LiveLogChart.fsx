@@ -12,6 +12,7 @@ open System.Reactive.Linq
 open System.Text.RegularExpressions
 open System.Windows.Forms
 open FSharp.Charting
+open FSharp.Charting.ChartTypes
 open FSharp.Control
 
 let isNotNull = function | null -> false | _ -> true
@@ -82,10 +83,8 @@ let pattern, log =
 printfn "Watched log file: %s\nPattern: %s" log pattern
 
 let form = new Form(Visible = true, TopMost = true, Width = 700, Height = 500)
-let chart = drawChart pattern log
-let ctl = new FSharp.Charting.ChartTypes.ChartControl(chart, Dock = DockStyle.Fill)
 form.Text <- log
-form.Controls.Add(ctl)
+form.Controls.Add(new ChartControl(drawChart pattern log, Dock = DockStyle.Fill))
 
 [<STAThread>]
-do Application.Run(form) 
+do Application.Run(form)
