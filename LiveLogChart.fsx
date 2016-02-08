@@ -1,9 +1,10 @@
 ﻿#r "System.Windows.Forms.DataVisualization.dll"
-#r "packages/Rx-Interfaces/lib/net45/System.Reactive.Interfaces.dll"
-#r "packages/Rx-Core/lib/net45/System.Reactive.Core.dll"
-#r "packages/Rx-Linq/lib/net45/System.Reactive.Linq.dll"
-#r "packages/FSharp.Charting/lib/net40/FSharp.Charting.dll"
-#r "packages/FSharp.Control.AsyncSeq/lib/net45/FSharp.Control.AsyncSeq.dll"
+#I "./packages/"
+#r "Rx-Interfaces/lib/net45/System.Reactive.Interfaces.dll"
+#r "Rx-Core/lib/net45/System.Reactive.Core.dll"
+#r "Rx-Linq/lib/net45/System.Reactive.Linq.dll"
+#r "FSharp.Charting/lib/net40/FSharp.Charting.dll"
+#r "FSharp.Control.AsyncSeq/lib/net45/FSharp.Control.AsyncSeq.dll"
 
 open System
 open System.IO
